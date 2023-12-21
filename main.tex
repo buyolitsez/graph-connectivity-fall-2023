@@ -41,7 +41,7 @@
 
 \newcommand{\incfig}[2][1]{%
  \def\svgwidth{#1\columnwidth}
- \import{./figures/}{#2.svg.pdf_tex}
+ \import{./figures/}{#2.pdf_tex}
 }
 \graphicspath{{figures/}}
 
@@ -107,6 +107,22 @@
 \theoremstyle{definition}
 \newtheorem*{exercs*}{Упражнение}
 
+\newtheorem{innercustomthm}{Теорема}
+\newenvironment{customthm}[1]
+  {\renewcommand\theinnercustomthm{#1}\innercustomthm}
+  {\endinnercustomthm}
+
+\newtheorem{innercustomcrly}{Следствие}
+\newenvironment{customcrly}[1]
+  {\renewcommand\theinnercustomcrly{#1}\innercustomcrly}
+  {\endinnercustomthm}
+
+\newtheorem{innercustomlm}{Лемма}
+\newenvironment{customlm}[1]
+  {\renewcommand\theinnercustomlm{#1}\innercustomlm}
+  {\endinnercustomthm}
+
+
 % small caps "proof" label
 \addto\captionsrussian{\renewcommand\proofname{\normalfont\textsc{Доказательство}}}
 
@@ -139,12 +155,14 @@
 \DeclareMathOperator{\Real}{Re}
 \DeclareMathOperator{\Imaginary}{Im}
 \DeclareMathOperator{\Part}{Part}
+\DeclareMathOperator{\QPart}{QPart}
 \DeclareMathOperator{\Int}{Int}
 \DeclareMathOperator{\Bound}{Bound}
 \DeclareMathOperator{\Struct}{Struct}
 \DeclareMathOperator{\BT}{BT}
 \DeclareMathOperator{\wT}{T}
 \DeclareMathOperator{\N}{N}
+\DeclareMathOperator{\Cut}{Cut}
 
 
 \title{Связность графов \\
@@ -163,11 +181,16 @@
 \tableofcontents
 \newpage
 
+\listoftodos
+\newpage
+
+\todo[inline]{обязательно ли два зависимых множества из $\R_k(G)$ пересекаются?}
+
 \subfile{lectures/00.tex}
 \subfile{lectures/01.tex}
 \subfile{lectures/02.tex}
+\subfile{lectures/03.tex}
+\subfile{lectures/10.tex}
 
-\newpage
-\listoftodos
 
 \end{document}
