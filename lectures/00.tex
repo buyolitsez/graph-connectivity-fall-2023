@@ -25,7 +25,7 @@
 	Через $\R_k(G)$ обозначим семейство всех $k$-вершинных разделяющих множеств графа $G$.
 \end{prop*}
 
-\begin{customthm}{1} \label{theorem:0_1}
+\begin{customthm}{0.1} \label{theorem:0_1}
 	Пусть $\S \subset \R(G), A \in \Part(\S)$, а граф  $G'$ получен из  $G$ удалением всех входящих в множества набора  $\S$ рёбер.
 	Тогда выполняются следующие утверждения:
 	 \begin{enumerate}
@@ -60,7 +60,7 @@
 	Ведь иначе бы $S \setminus \{x\}$ отделяло бы  $\Int(A)$ от $G - A$ и тогда граф не был $k$-связным(т.е. при удалении $S$ граф разваливается на части, а если вернуть вершину $x$, то он опять становится связным).
 \end{remrk}
 
-\begin{customthm}{2}\label{theorem:0_2}
+\begin{customthm}{0.2}\label{theorem:0_2}
 	Пусть $G$ ~-- $k$-связный граф, $\S \subset \R_k(G)$.
 	Тогда для любой $A \in \Part(\S)$ граница $\Bound(A)$ есть множество всех вершин части  $A$, смежных хотя бы с одной вершиной из $V(G) \setminus A$. 
 \end{customthm}
@@ -81,7 +81,7 @@
 
 \subsection{Представление части разбиения графа набором множеств в виде пересечения частей разбиения поднаборами.}
 
-\begin{customthm}{3} \label{theorem:0_3}
+\begin{customthm}{0.3} \label{theorem:0_3}
 	Пусть $\S_1, \dots, \S_n \subset \R(G)$, а $\S = \cup_{i = 1}^{n} \S_i$. Рассмотрим все множества вершин вида
 
 	\begin{align}
@@ -116,7 +116,7 @@
 	
 \end{proof}
 
-\begin{customlm}{1}
+\begin{customlm}{0.1}
 	Пусть $\S, \T \subset \R(G)$, а часть  $A \in \Part(\S)$ такова, что ни одно из множеств набора  $\T$ ее не разделяет.
 
 	Тогда  $A \in \Part(\S \cup \T)$.
@@ -135,7 +135,7 @@
 	В противном случае назовем их \textbf{зависимыми}.
 \end{df*}
 
-\begin{customlm}{2} \label{lemma:0_2}
+\begin{customlm}{0.2} \label{lemma:0_2}
 	Пусть $S, T \in \R_k(G)$ и часть  $A \in \Part(S)$ такова, что  $T \cap \Int(A) = \varnothing \implies T$ не разделяет часть  $A$ и следовательно,  $T$ не разделяет множество  $S$.
 \end{customlm}
 
@@ -145,7 +145,7 @@
 	Следовательно, граф  $G(\Int(A) \cup (S \setminus T))$ связен, откуда очевидно следует, что  $T$ не разделяет  $A$ и  поэтому $T$ не разделяет  $S$(ведь $S \subset A$).
 \end{proof}
 
-\begin{customlm}{3} \label{lemma:0_3}
+\begin{customlm}{0.3} \label{lemma:0_3}
 	Пусть $S, T \in \R_k(G)$ таковы, что множество  $S$ не разделяет множество $T$. Тогда множество $T$ не разделяет множество $S$(т.е. они независимы).
 \end{customlm}
 
@@ -161,7 +161,7 @@
 	Через $\D(G)$ обозначим семейство одиночных множеств. 
 \end{df*}
 
-\begin{customlm}{4} \label{lemma:0_4}
+\begin{customlm}{0.4} \label{lemma:0_4}
 	Пусть множества $S, T \in \R_k(G)$ независимы, а часть  $A \in \Part(S)$ содержит  $T$.
 	Тогда в  $\Part(T)$ есть часть, содержащая все отличные от  $A$ части из $\Part(S)$, а все остальные части $\Part(T)$ являются подмножествами  $A$.
 \end{customlm}
@@ -180,7 +180,7 @@
 
 \end{proof}
 
-\begin{customlm}{5} \label{lemma:0_5}
+\begin{customlm}{0.5} \label{lemma:0_5}
 	Пусть множества $S, T \in \R_k(G)$ зависимы,  $\Part(S) = \{A_1, \ldots, A_m\}, \, \Part(T) = \{B_1, \ldots, B_n\}, \; P = T \cap S, \; T_i = T \cap \Int(A_i), \; S_j = S \cap \Int(B_j), \; G_{i, j} = A_i \cap B_j$.
 
 	Тогда выполняются следующие утверждения:
@@ -282,7 +282,7 @@
 		Для этого необходимо, чтобы  $\Cut(A)$ содержал ровно  $k$ элементов и среди них было хотя бы одно ребро.
 \end{itemize}
 
-\begin{customlm}{6} \label{lemma:0_6}
+\begin{customlm}{0.6} \label{lemma:0_6}
 	Пусть $\S \subset \T(G), A \in \Part(\S)$, причем  $\Int(A) \neq \varnothing$.
 	Обозначим через  $\overline A$ объединение всех отличных от  $A$ частей  $\Part(\S)$.
 	Тогда выполняются следующие утверждения:
@@ -328,7 +328,7 @@
     \label{fig:df_0_independent_cuts}
 \end{figure}
 
-\begin{customlm}{7} \label{lemma:0_7}
+\begin{customlm}{0.7} \label{lemma:0_7}
 	Пусть разрезы $S, R, T \in \T(G)$ таковы, что  $S$ и  $R$ независимы, а также $T$ и  $R$ независимы.
 	Пусть  $\Part(S) = \{A_1, A_2\}, \, \Part(T) = \{B_1, B_2\}, \ \Part(R) = \{D_1, D_2\}$, причем $D_1 \supset A_1$ и $D_2 \supset B_2$.
 	Тогда разрезы $S$ и  $T$ независимы.
@@ -338,7 +338,7 @@
 	Из независимости $S$ и  $R$ получаем что  $A_2 \supset D_2 \supset B_2$, а из независимости $T$ и  $R$ следует, что  $B_1 \supset D_1 \supset A_1$, таким образом $S$ и  $T$ независимы.
 \end{proof}
 
-\begin{customlm}{8}
+\begin{customlm}{0.8} \label{lemma:0_8}
 	Пусть разрезы $S, T \in \T(G)$ независимы,  $\Part(S) = \{A_1, A_2\}, \Part(T) = \{B_1, B_2\}$, причем $A_1 \supset B_2$ и $B_1 \supset A_2$. Тогда выполнено следующее:
 
 	\begin{enumerate}
@@ -347,6 +347,14 @@
 	\end{enumerate}
 
 \end{customlm}
+
+\begin{figure}[ht]
+	\centering
+	\incfig[0.5]{lemma_0_8}
+	\caption{Рисунок к Лемме \ref{lemma:0_8}. Закрашенная область соответствует $R(B_2)$.} 
+	\label{fig:lemma_0_8}
+\end{figure}
+
 
 \begin{proof}
 	\begin{enumerate}

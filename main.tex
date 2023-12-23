@@ -122,6 +122,11 @@
   {\renewcommand\theinnercustomlm{#1}\innercustomlm}
   {\endinnercustomthm}
 
+\newtheorem{innercustomclaim}{Утверждение}
+\newenvironment{customclaim}[1]
+  {\renewcommand\theinnercustomclaim{#1}\innercustomclaim}
+  {\endinnercustomclaim}
+
 
 % small caps "proof" label
 \addto\captionsrussian{\renewcommand\proofname{\normalfont\textsc{Доказательство}}}
@@ -163,6 +168,7 @@
 \DeclareMathOperator{\wT}{T}
 \DeclareMathOperator{\N}{N}
 \DeclareMathOperator{\Cut}{Cut}
+\DeclareMathOperator{\PT}{PT}
 
 
 \title{Связность графов \\
