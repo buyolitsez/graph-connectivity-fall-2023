@@ -170,6 +170,12 @@
 \DeclareMathOperator{\Cut}{Cut}
 \DeclareMathOperator{\PT}{PT}
 
+\newlength{\tempheight}
+\newcommand{\Let}[0]{%
+\mathbin{\text{\settoheight{\tempheight}{\mathstrut}\raisebox{0.5\pgflinewidth}{%
+\tikz[baseline,line cap=round,line join=round] \draw (0,0) --++ (0.4em,0) --++ (0,1.5ex) --++ (-0.4em,0);%
+}}}\,}
+
 
 \title{Связность графов \\
   (5 семестр, спецкурс, набор 2021).}
@@ -196,7 +202,8 @@
 \subfile{lectures/01.tex}
 \subfile{lectures/02.tex}
 \subfile{lectures/03.tex}
-\subfile{lectures/10.tex}
+\subfile{lectures/04.tex}
+\subfile{lectures/05.tex}
 
 
 \end{document}
