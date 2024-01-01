@@ -1,8 +1,12 @@
-\contentsline {todo}{обязательно ли два зависимых множества из $\ensuremath \mathfrak {R}_k(G)$ пересекаются?}{5}{section*.4}%
-\contentsline {todo}{но не обязательно минимальный?}{32}{section*.5}%
-\contentsline {todo}{почему?}{39}{section*.6}%
-\contentsline {todo}{почему?}{39}{section*.7}%
-\contentsline {todo}{почему это лес?}{39}{section*.8}%
-\contentsline {todo}{дописать главу 3}{39}{section*.9}%
-\contentsline {todo}{почему?}{41}{section*.10}%
-\contentsline {todo}{заполнить 4-9 лекции}{45}{section*.11}%
+\contentsline {todo}{обязательно ли два зависимых множества из $\ensuremath \mathfrak {R}_k(G)$ пересекаются?}{6}{section*.4}%
+\contentsline {todo}{но не обязательно минимальный?}{36}{section*.5}%
+\contentsline {todo}{почему?}{43}{section*.6}%
+\contentsline {todo}{почему?}{43}{section*.7}%
+\contentsline {todo}{чтобы использовать утв1 в лемме 9, нам ведь надо чтобы существовал какой то кривой разрез над ребром из $E_{k+1}$, как мы говорим что такой есть?}{44}{section*.8}%
+\contentsline {todo}{ниже}{44}{section*.9}%
+\contentsline {todo}{и что? почему все из $S \cup \{x\} \cup \N _G(b)$ обязаны лежать в $S_{ab}$?}{45}{section*.10}%
+\contentsline {todo}{почему?}{49}{section*.11}%
+\contentsline {todo}{почему есть вершина степени 3? начало док-ва теоремы 3}{53}{section*.12}%
+\contentsline {todo}{почему внутренность каждой части $\Part (H_W)$ содержит хотя бы две вершины? может если это не так то мы называем часть циклом? хотя вроле обычно длина 4 нужна}{54}{section*.13}%
+\contentsline {todo}{почему $\kappa (G) \geq 2k$?}{56}{section*.14}%
+\contentsline {todo}{в самом низу слайда определения, что две несоседние вершины части-цикла не образуют разделяюшего множества. Кажется наоборот ведь, две соседние не образуют а две не соседние образуют(но не одиночное), не стоит этого писать на экзе. А, видимо одиночными будут те две которые крепят цикл к основному графу.}{59}{section*.15}%
